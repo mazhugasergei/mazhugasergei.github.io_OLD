@@ -17,6 +17,12 @@ const Footer = ({ footer }: { footer: footerType | undefined }) => {
         if(!label.contains(e.target as Node | null) && !input.contains(e.target as Node | null)) input.checked = false
       }
     })
+    // close language select menu on scroll
+    document.addEventListener("scroll", (e) => {
+      const input: HTMLInputElement | null = document.querySelector('footer .languages-button-checkbox')
+      if(input) input.checked = false
+    })
+    // close language select menu on touchstart
     document.addEventListener("touchstart", (e) => {
       const label: HTMLLabelElement | null = document.querySelector('footer .languages-button')
       const input: HTMLInputElement | null = document.querySelector('footer .languages-button-checkbox')

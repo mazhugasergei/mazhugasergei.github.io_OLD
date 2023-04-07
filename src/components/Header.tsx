@@ -7,8 +7,7 @@ const Header = ({ header }: { header: headerType | undefined }) => {
   const changeHeader = () => {
     // change border-bottom bg
     const wrapper: HTMLElement | null = document.querySelector('header .wrapper')
-    if(window.scrollY > 0) wrapper?.classList.add("scrolled")
-    else wrapper?.classList.remove("scrolled")
+    window.scrollY > 0 ? wrapper?.classList.add("scrolled") : wrapper?.classList.remove("scrolled")
   }
 
   useEffect(()=>{
@@ -24,6 +23,12 @@ const Header = ({ header }: { header: headerType | undefined }) => {
         if(!label.contains(e.target as Node | null) && !input.contains(e.target as Node | null)) input.checked = false
       }
     })
+    // close menu on scroll
+    window.addEventListener("scroll", ()=>{
+      const input: HTMLInputElement | null = document.querySelector('header .menu-button-checkbox')
+      if(input) input.checked = false
+    })
+    // close menu on touchstart
     document.addEventListener("touchstart", (e)=>{
       const label: HTMLLabelElement | null = document.querySelector('header .menu-button')
       const input: HTMLInputElement | null = document.querySelector('header .menu-button-checkbox')
