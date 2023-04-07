@@ -1,0 +1,7 @@
+@mixin hoverable{
+  border-radius: .25rem;
+  transition: $transition;
+  &:hover{
+    background: rgb(#000, .032);
+  }
+}

@@ -1,0 +1,107 @@
+  header{
+    @media (max-width: 426px){
+      padding: 0 !important;
+    }
+    @media (min-width: 769px){
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    position: relative;
+    z-index: 999;
+    background: $bg;
+    position: fixed;
+    top: 0;
+    
+    
+    .container{
+      @media (max-width: 426px){
+        padding: 1rem var(--wrapper-padding) !important;
+      }
+      @media (max-width: 769px){
+        padding: 1rem 0;
+      }
+      @media (min-width: 769px){
+        padding: 1.2rem 0;
+      }
+      display: flex;
+      align-items: center;
+      border-bottom: .0625rem solid transparent;
+      transition: $transition;
+      &.scrolled{
+        border-bottom-color: $border;
+      }
+    }
+
+
+    .logo{ margin-right: auto; }
+
+
+    .menu-button-checkbox{ display: none; }
+  
+
+    .menu{
+      @media (max-width: 769px){
+        @include list-a;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: calc(48px + .5rem);
+        right: 1.5rem;
+        transform-origin: top right;
+      }
+      @media (min-width: 769px){
+        display: flex;
+        gap: .25rem;
+        margin-right: -0.9rem;
+      }
+    }
+    .menu-item{
+      @media (min-width: 769px){
+        border-bottom: none;
+      }
+      display: flex;
+      a{
+        @media (min-width: 769px){
+          @include hoverable;
+          position: relative;
+          font-weight: 500;
+          padding: .5rem .9rem;
+        }
+      }
+    }
+    .menu-button-checkbox:checked ~ .menu{
+      visibility: visible;
+      opacity: 1;
+      animation: $transition list;
+    }
+  
+
+    .menu-button{
+      @media (min-width: 769px){ display: none; }
+      cursor: pointer;
+      position: relative;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      margin-right: -12px;
+      &::before, &::after{
+        content: '';
+        width: 18px;
+        height: 2.4px;
+        background: $main;
+        transition: $transition;
+        @media (forced-colors){
+          background: canvasText;
+        }
+      }
+      &::before{ margin-bottom: 6px; }
+    }
+    .menu-button-checkbox:checked ~ .menu-button{
+      &::before{ margin-bottom: -2px; transform: rotate(45deg); }
+      &::after{ transform: rotate(-45deg); }
+    }
+  }

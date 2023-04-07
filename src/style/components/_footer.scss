@@ -1,0 +1,92 @@
+footer{
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .0625rem solid $border;
+    padding: 2rem 0;
+  }
+
+  .languages-container{
+    position: relative;
+
+    .languages-button-checkbox{
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .languages-button-checkbox:focus{
+      ~ .languages-button{
+        background: none;
+      }
+    }
+    .languages-button-checkbox:checked{
+      ~ .languages-list{
+        opacity: 1;
+        visibility: visible;
+        animation: $transition list;
+      }
+      ~ .languages-button{
+        background: rgb(#000, .027);
+      }
+    }
+  
+    .languages-button{
+      @include hoverable;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      padding: .6rem .8rem;
+      margin-left: -0.8rem;
+      span{
+        font-weight: 600;
+        margin: 0 .1rem 0 .33rem;
+      }
+    }
+
+    .languages-list{
+      @include list-li;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      bottom: 100%;
+      left: 10%;
+      transform-origin: left bottom;
+      transition: 0s;
+      padding: .25rem .75rem;
+    }
+    .languages-item{
+      padding: .6rem 2rem .6rem .5rem;
+      div{
+        pointer-events: none;
+        white-space: nowrap;
+        line-height: 1.4;
+        &:nth-child(1){
+          font-weight: 600;
+        }
+        &:nth-child(2){
+          color: lighten($text, 20);
+        }
+      }
+    }
+  }
+  
+  .social{
+    display: flex;
+    gap: .3rem;
+    a{
+      @include hoverable;
+      display: flex;
+      align-items: center;
+      padding: 0.3rem;
+    }
+    svg{
+      width: 1rem;
+      height: 1rem;
+      path{
+        fill: $main;
+      }
+    }
+  }
+}

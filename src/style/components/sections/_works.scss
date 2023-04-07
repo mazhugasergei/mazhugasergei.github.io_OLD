@@ -1,0 +1,37 @@
+section.works{
+  .works{
+    @media (min-width: 426px){
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    }
+    display: grid;
+    gap: 2.25rem;
+    a{
+      overflow: hidden;
+      background: #fff;
+      border: .0625rem solid $border;
+      border-radius: 1.25rem;
+      transition: $transition;
+      padding: 1.25rem;
+      @media (forced-colors){
+        outline: .0625rem solid transparent;
+      }
+      &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 40px rgb(#cacaca, .15);
+      }
+      img{
+        display: block;
+        width: 100%;
+        border-radius: .5rem;
+        margin-bottom: 1.2rem;
+      }
+      .using{
+        font-size: .8rem;
+        color: #888;
+      }
+      h3{
+        margin: .35rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: .75rem;
+  transform: translateZ(0); // fix on safari
+  background: $main;
+  border: none;
+  transition: $transition;
+  padding: .75rem 1.25rem;
+  &.outline{
+    position: relative;
+    color: $main;
+    background: none;
+    &::before{
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: .125rem solid $main;
+      border-radius: inherit;
+    }
+  }
+  @media (forced-colors){
+    outline: 1px solid transparent;
+  }
+}

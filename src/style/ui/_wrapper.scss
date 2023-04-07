@@ -1,0 +1,13 @@
+:root{
+  --wrapper-padding: 24px;
+  @media (min-width: 1025px){ --wrapper-padding: 60px; }
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1440px;
+  padding-left: var(--wrapper-padding);
+  padding-right: var(--wrapper-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
