@@ -1,0 +1,63 @@
+{
+  "header": {
+    "home": "ホーム",
+    "about": "私について",
+    "works": "作品",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "heading": "どうも、セルゲイです",
+    "paragraph": "A front-end web developer from Vladivostok with 3+ years of coding experience and a passion for creating visually stunning and intuitive websites.",
+    "contact": "お問い合わせ"
+  },
+  "about": {
+    "title": "私について",
+    "subtitle": "My skills and what I do",
+    "heading": "Coding Magic",
+    "paragraph": "As a junior front-end web developer, I'm passionate about creating engaging digital experiences and excited to continue growing in this ever-evolving field and contributing to its ongoing innovation.",
+    "skills": "私のスキル"
+  },
+  "works": {
+    "title": "作品",
+    "subtitle": "最近の作品",
+    "cards": {
+      "amv-theatres": {
+        "url": "amvtheatres.vercel.app",
+        "title": "AMV Theatres",
+        "paragraph": "大学の授業企画で作った映画館のサイト",
+        "using": ["Next.js", "Firebase"]
+      },
+      "optic-shop": {
+        "url": "mazhugasergei.github.io/optic-shop",
+        "title": "Optic Shop",
+        "paragraph": "オプティックショップのメインページ。",
+        "using": ["React"]
+      },
+      "kbooks": {
+        "url": "ashot2003.github.io/kbooks/",
+        "title": "KBooks",
+        "paragraph": "友人が書いた本のコレクション。",
+        "using": ["React", "React Router", "JSON"]
+      },
+      "posa": {
+        "url": "mazhugasergei.github.io/posa",
+        "title": "Posa Fotoservice",
+        "paragraph": "Gallery Web App for my German fiend who loves photographing",
+        "using": ["React", "TypeScript", "Supabase"]
+      },
+      "posts": {
+        "url": "github.com/Belphin/posts-list-coop",
+        "title": "Posts (in progress)",
+        "paragraph": "Advanced Posts Website currently being made in a team with my Ukrainian friend.",
+        "using": ["Next.js", "Redux", "MongoDB"]
+      }
+    }
+  },
+  "cta": {
+    "title": "Would like to collaborate? Let's build something amazing together!",
+    "contact": "Contact"
+  },
+  "footer": {
+    "language": "日本語"
+  }
+}
