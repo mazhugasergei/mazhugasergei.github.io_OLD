@@ -48,7 +48,7 @@
       "posts": {
         "url": "github.com/Belphin/posts-list-coop",
         "title": "Posts (in progress)",
-        "paragraph": "Advanced Posts Website currently being made in a team with my Ukrainian friend.",
+        "paragraph": "Posts Website currently being made in a team with my Ukrainian friend.",
         "using": ["Next.js", "Redux", "MongoDB"]
       }
     }
