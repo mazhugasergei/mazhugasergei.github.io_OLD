@@ -42,7 +42,7 @@
       "posa": {
         "url": "mazhugasergei.github.io/posa",
         "title": "Posa Fotoservice",
-        "paragraph": "Gallery Web App for my German fiend who loves photographing",
+        "paragraph": "Gallery Web App for my German friend who loves photographing",
         "using": ["React", "TypeScript", "Supabase"]
       },
       "posts": {
