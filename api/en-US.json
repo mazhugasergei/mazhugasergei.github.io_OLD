@@ -2,8 +2,7 @@
   "header": {
     "home": "Home",
     "about": "About",
-    "works": "Works",
-    "contact": "Contact"
+    "works": "Works"
   },
   "hero": {
     "heading": "Hi, I'm Sergei!",
