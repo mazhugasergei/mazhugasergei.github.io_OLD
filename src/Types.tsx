@@ -10,8 +10,7 @@ export type textType = {
 export type headerType = {
   home: string | null,
   about: string | null,
-  works: string | null,
-  conatct: string | null
+  works: string | null
 }
 
 export type heroType = {
