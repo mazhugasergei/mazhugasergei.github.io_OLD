@@ -10,7 +10,7 @@
   border: none;
   transition: $transition;
   padding: .75rem 1.25rem;
-  &:hover{
+  &:not(.outline):hover{
     opacity: .9;
   }
   &.outline{
