@@ -284,7 +284,7 @@ header .menu-item {
 @media (min-width: 769px) {
   header .menu-item a {
     border-radius: 0.25rem;
-    transition: 0.15s;
+    transition: 0.025s;
     position: relative;
     font-weight: 500;
     padding: 0.5rem 0.9rem;
@@ -366,7 +366,7 @@ footer .languages-container .languages-button-checkbox:checked ~ .languages-butt
 }
 footer .languages-container .languages-button {
   border-radius: 0.25rem;
-  transition: 0.15s;
+  transition: 0.025s;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -429,7 +429,7 @@ footer .social {
 }
 footer .social a {
   border-radius: 0.25rem;
-  transition: 0.15s;
+  transition: 0.025s;
   display: flex;
   align-items: center;
   padding: 0.3rem;
