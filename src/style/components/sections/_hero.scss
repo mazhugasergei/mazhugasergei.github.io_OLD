@@ -45,34 +45,6 @@ section.hero{
         overflow: hidden;
         display: inline-flex;
         position: relative;
-        padding: 0;
-        &:hover{
-          .text{
-            transform: translateX(-2rem);
-          }
-          .hover-cont{
-            left: 0;
-            svg{
-              @keyframes jump{
-                0%{
-                  transform: rotate(0);
-                }
-                50%{
-                  transform: rotate(-7deg);
-                }
-                100%{
-                  transform: rotate(0);
-                }
-              }
-              transform-origin: left bottom;
-              animation: $transition*2 jump ease-out;
-            }
-          }
-        }
-        .text{
-          transition: $transition;
-          padding: .75rem 1.25rem;
-        }
         .hover-cont{
           overflow: hidden;
           display: grid;

@@ -497,32 +497,6 @@ section.hero .buttons .btn.contact {
   overflow: hidden;
   display: inline-flex;
   position: relative;
-  padding: 0;
-}
-section.hero .buttons .btn.contact:hover .text {
-  transform: translateX(-2rem);
-}
-section.hero .buttons .btn.contact:hover .hover-cont {
-  left: 0;
-}
-section.hero .buttons .btn.contact:hover .hover-cont svg {
-  transform-origin: left bottom;
-  animation: 0.3s jump ease-out;
-}
-@keyframes jump {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(-7deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-section.hero .buttons .btn.contact .text {
-  transition: 0.15s;
-  padding: 0.75rem 1.25rem;
 }
 section.hero .buttons .btn.contact .hover-cont {
   overflow: hidden;

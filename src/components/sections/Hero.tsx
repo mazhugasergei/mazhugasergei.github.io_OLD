@@ -34,10 +34,7 @@ const Hero = ({ hero }: { hero: heroType | undefined }) => {
         <h1>{ hero && hero.heading }</h1>
         <p>{ hero && hero.paragraph }</p>
         <div className="buttons">
-          <a href="mailto:ghbdtnghbdtn8@gmail.com" className="btn contact">
-            <div className="text">{ hero && hero.contact }</div>
-            <div className="hover-cont"><MdOutlineMail style={{ fontSize: "1.15rem" }}/></div>
-          </a>
+          <a href="mailto:ghbdtnghbdtn8@gmail.com" className="btn contact">{ hero && hero.contact }</a>
           <a download={"Mazhuga Sergei CV"} href="/assets/CV.pdf" className="btn outline download-cv">Download CV<FiDownload style={{ fontSize: "1.15rem" }} /></a>
         </div>
       </div>
