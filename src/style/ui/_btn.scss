@@ -10,6 +10,9 @@
   border: none;
   transition: $transition;
   padding: .75rem 1.25rem;
+  &:hover{
+    opacity: .9;
+  }
   &.outline{
     position: relative;
     color: $main;
