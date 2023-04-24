@@ -14,15 +14,10 @@ const Works = ({ works }: { works: worksType | undefined }) => {
   return (
     <section className="works wrapper" id="works">
       <div className="title"><h1>{ works && works.title }</h1><h5>{ works && works.subtitle }</h5></div>
-      {/* <div className="carousel">{
-         works && Object.keys(works.cards).map(name => (
-          <div>{ works.cards[name].title }</div>
-         ))
-      }</div> */}
       <div className="works">{
         works && Object.keys(works.cards).map(name => (
           <a href={ "https://" + works.cards[name].url } target="_blank" key={name}>
-            <img src={"/assets/images/works_screenshots/" + name + ".png"} />
+            <img src={"/assets/images/works/" + name + ".png"} />
             <div className="info">
               <div className="using">{ works.cards[name].using?.join(" | ") }</div>
               <h3>{ works.cards[name].title }</h3>
