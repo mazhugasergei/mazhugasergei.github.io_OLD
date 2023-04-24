@@ -36,7 +36,7 @@
         "url": "ashot2003.github.io/kbooks/",
         "title": "KBooks",
         "paragraph": "A collection of my friend's books.",
-        "using": ["React", "React Router", "JSON"]
+        "using": ["React", "React Router"]
       },
       "amv-theatres": {
         "url": "amvtheatres.vercel.app",
