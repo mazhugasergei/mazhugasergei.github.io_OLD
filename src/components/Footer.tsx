@@ -77,7 +77,7 @@ const Footer = ({ footer }: { footer: footerType | undefined }) => {
 
         <div className="social">
           <a target="_blank" href="https://www.linkedin.com/in/sergei-mazhuga-274618247/"><FaLinkedin/></a>
-          <a target="_blank" href="https://github.com/markuswedler"><FaGithub/></a>
+          <a target="_blank" href="https://github.com/mazhugasergei"><FaGithub/></a>
           <a target="_blank" href="https://www.youtube.com/channel/UC07C6734bBfcNVL2Za8Y_-A"><FaYoutube/></a>
           <a target="_blank" href="https://dev.to/markuswedler"><FaDev/></a>
         </div>
