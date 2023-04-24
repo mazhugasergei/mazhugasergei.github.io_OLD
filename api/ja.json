@@ -20,11 +20,11 @@
     "title": "作品",
     "subtitle": "最近の作品",
     "cards": {
-      "amv-theatres": {
-        "url": "amvtheatres.vercel.app",
-        "title": "AMV Theatres",
-        "paragraph": "大学の授業企画で作った映画館のサイト",
-        "using": ["Next.js", "Firebase"]
+      "dod": {
+        "url": "dod.dvfu.ru",
+        "title": "FEFU Open Day",
+        "paragraph": "A website made for Far Eastern Federal University Open Day event.",
+        "using": ["Next.js"]
       },
       "optic-shop": {
         "url": "mazhugasergei.github.io/optic-shop",
@@ -37,6 +37,12 @@
         "title": "KBooks",
         "paragraph": "友人が書いた本のコレクション。",
         "using": ["React", "React Router", "JSON"]
+      },
+      "amv-theatres": {
+        "url": "amvtheatres.vercel.app",
+        "title": "AMV Theatres",
+        "paragraph": "大学の授業企画で作った映画館のサイト",
+        "using": ["Next.js", "Firebase"]
       },
       "posa": {
         "url": "mazhugasergei.github.io/posa",

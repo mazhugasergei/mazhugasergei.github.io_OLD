@@ -20,11 +20,11 @@
     "title": "Meine Arbeiten",
     "subtitle": "Neueste Arbeiten",
     "cards": {
-      "amv-theatres": {
-        "url": "amvtheatres.vercel.app",
-        "title": "AMV Theatres",
-        "paragraph": "Website eines Kinos welche im zuge eines Uni-Projektes erstellt wurde.",
-        "using": ["Next.js", "Firebase"]
+      "dod": {
+        "url": "dod.dvfu.ru",
+        "title": "FEFU Open Day",
+        "paragraph": "A website made for Far Eastern Federal University Open Day event.",
+        "using": ["Next.js"]
       },
       "optic-shop": {
         "url": "mazhugasergei.github.io/optic-shop",
@@ -37,6 +37,12 @@
         "title": "KBooks",
         "paragraph": "Eine Sammlung von Büchern, die von meinem Freund geschrieben wurden.",
         "using": ["React", "React Router", "JSON"]
+      },
+      "amv-theatres": {
+        "url": "amvtheatres.vercel.app",
+        "title": "AMV Theatres",
+        "paragraph": "Website eines Kinos welche im zuge eines Uni-Projektes erstellt wurde.",
+        "using": ["Next.js", "Firebase"]
       },
       "posa": {
         "url": "mazhugasergei.github.io/posa",
