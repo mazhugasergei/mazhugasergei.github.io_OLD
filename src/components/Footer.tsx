@@ -9,12 +9,20 @@ import { FaLinkedin, FaGithub, FaYoutube, FaDev } from "react-icons/fa"
 
 const Footer = ({ footer }: { footer: footerType | undefined }) => {
   useEffect(()=>{
-    // close language select menu on outside click
+    // set onckick event for language select menu
     document.addEventListener("click", (e) => {
       const label: HTMLLabelElement | null = document.querySelector('footer .languages-button')
       const input: HTMLInputElement | null = document.querySelector('footer .languages-button-checkbox')
       if(label && input){
         if(!label.contains(e.target as Node | null) && !input.contains(e.target as Node | null)) input.checked = false
+        else{
+          const langBtns = document.querySelectorAll<HTMLLIElement>('footer .languages-item')
+          if(langBtns){
+            langBtns.forEach(item => {
+              item.tabIndex = 0
+            })
+          }
+        }
       }
     })
     // close language select menu on scroll
@@ -31,7 +39,7 @@ const Footer = ({ footer }: { footer: footerType | undefined }) => {
         if(!label.contains(e.target as Node | null) && !input.contains(e.target as Node | null) && !list.contains(e.target as Node | null)) input.checked = false
       }
     })
-    // change language onclick event
+    // add onclick event for language change button
     document.querySelectorAll('footer .languages-item').forEach(lang => {
       lang.addEventListener("click", (e)=>{
         const li: HTMLElement | null = e.target as HTMLElement

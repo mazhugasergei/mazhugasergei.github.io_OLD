@@ -58,6 +58,9 @@ footer{
     }
     .languages-item{
       padding: .6rem 2rem .6rem .5rem;
+      &:focus-visible{
+        outline-color: #fff;
+      }
       div{
         pointer-events: none;
         white-space: nowrap;
