@@ -1,5 +1,5 @@
 // react
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 // types
 import { footerType } from "../Types"
 // icons
@@ -8,36 +8,26 @@ import { MdKeyboardArrowDown } from "react-icons/md"
 import { FaLinkedin, FaGithub, FaYoutube, FaDev } from "react-icons/fa"
 
 const Footer = ({ footer }: { footer: footerType | undefined }) => {
+  const languagesButton = useRef<HTMLLabelElement>(null)
+  const languagesButtonCheckbox = useRef<HTMLInputElement>(null)
+
   useEffect(()=>{
     // set onckick event for language select menu
     document.addEventListener("click", (e) => {
-      const label: HTMLLabelElement | null = document.querySelector('footer .languages-button')
-      const input: HTMLInputElement | null = document.querySelector('footer .languages-button-checkbox')
-      if(label && input){
-        if(!label.contains(e.target as Node | null) && !input.contains(e.target as Node | null)) input.checked = false
-        else{
-          const langBtns = document.querySelectorAll<HTMLLIElement>('footer .languages-item')
-          if(langBtns){
-            langBtns.forEach(item => {
-              item.tabIndex = 0
-            })
-          }
-        }
+      if(!languagesButton.current?.contains(e.target as Node | null) && !languagesButtonCheckbox.current?.contains(e.target as Node | null)) languagesButtonCheckbox.current!.checked = false
+      else{
+        const langBtns = document.querySelectorAll<HTMLLIElement>('footer .languages-item')
+        if(langBtns) langBtns.forEach(item => item.tabIndex = 0)
       }
     })
     // close language select menu on scroll
     document.addEventListener("scroll", (e) => {
-      const input: HTMLInputElement | null = document.querySelector('footer .languages-button-checkbox')
-      if(input) input.checked = false
+      languagesButtonCheckbox.current!.checked = false
     })
     // close language select menu on touchstart
     document.addEventListener("touchstart", (e) => {
-      const label: HTMLLabelElement | null = document.querySelector('footer .languages-button')
-      const input: HTMLInputElement | null = document.querySelector('footer .languages-button-checkbox')
       const list: HTMLDataListElement | null = document.querySelector('footer .languages-list')
-      if(label && input && list){
-        if(!label.contains(e.target as Node | null) && !input.contains(e.target as Node | null) && !list.contains(e.target as Node | null)) input.checked = false
-      }
+      if(list) if(!languagesButton.current?.contains(e.target as Node | null) && !languagesButtonCheckbox.current?.contains(e.target as Node | null) && !list.contains(e.target as Node | null)) languagesButtonCheckbox.current!.checked = false
     })
     // add onclick event for language change button
     document.querySelectorAll('footer .languages-item').forEach(lang => {
@@ -55,8 +45,8 @@ const Footer = ({ footer }: { footer: footerType | undefined }) => {
       <div className="container wrapper">
 
         <div className="languages-container">
-          <input className="languages-button-checkbox" type="checkbox" id="languages"/>
-          <label className="languages-button" htmlFor="languages">
+          <input ref={languagesButtonCheckbox} className="languages-button-checkbox" type="checkbox" id="languages"/>
+          <label ref={languagesButton} className="languages-button" htmlFor="languages">
             <BsGlobe />
             <span>{ footer && footer.language }</span>
             <MdKeyboardArrowDown />
