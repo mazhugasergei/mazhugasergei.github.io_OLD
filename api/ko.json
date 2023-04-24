@@ -12,7 +12,7 @@
   "about": {
     "title": "소개",
     "subtitle": "My skills and what I do",
-    "heading": "Coding Magic",
+    "heading": "Digital Enthusiast",
     "paragraph": "As a junior front-end web developer, I'm passionate about creating engaging digital experiences and excited to continue growing in this ever-evolving field and contributing to its ongoing innovation.",
     "skills": "능력"
   },
@@ -36,7 +36,7 @@
         "url": "ashot2003.github.io/kbooks/",
         "title": "KBooks",
         "paragraph": "친구가 집필한 책 컬렉션",
-        "using": ["React", "React Router", "JSON"]
+        "using": ["React", "React Router"]
       },
       "amv-theatres": {
         "url": "amvtheatres.vercel.app",
