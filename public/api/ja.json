@@ -24,7 +24,7 @@
         "url": "dod.dvfu.ru",
         "title": "FEFU Open Day",
         "paragraph": "A website made for Far Eastern Federal University Open Day event.",
-        "using": ["Next.js"]
+        "using": ["Next.js", "TypeScript"]
       },
       "optic-shop": {
         "url": "mazhugasergei.github.io/optic-shop",
