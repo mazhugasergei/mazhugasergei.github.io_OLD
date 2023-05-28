@@ -599,11 +599,17 @@ section.cta {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 }
+section.cta .img {
+  width: 8rem;
+  aspect-ratio: 888/423.68;
+  background-size: contain;
+  margin-bottom: 1rem;
+}
 section.cta h1 {
   text-align: center;
   max-width: 50rem;
   line-height: 1.25;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 section.works .works {

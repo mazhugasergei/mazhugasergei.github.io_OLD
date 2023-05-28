@@ -4,10 +4,16 @@ section.cta{
   align-items: center;
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  .img{
+    width: 8rem;
+    aspect-ratio: 888/423.68;
+    background-size: contain;
+    margin-bottom: 1rem;
+  }
   h1{
     text-align: center;
     max-width: 50rem;
     line-height: 1.25;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
   }
 }
